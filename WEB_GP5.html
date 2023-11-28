@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<link rel="stylesheet" type="text/css" href="CSS_GP_1.css">-->
+	<style type="text/css">
+		body {
+			margin: 0px;
+			background-image: url(swamp.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			
+
+		}
+		.big-wrap {
+			height: 1000px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+		}
+
+		.topbar {
+			position: fixed;
+			height: 200px;
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+		}
+		.logo-box {
+			height: 100%;
+			width: 15%;
+			background-color: #2b2b2b;
+		}
+		.main-logo {
+			height: 100%;
+			width: 100%;
+			border: solid 3px white;
+			/*z-index: 3;*/
+		}
+		.top-nav {
+			height: 50%;
+			width: 85%;
+			background-color: #0f0c0d;
+			/*border-left: solid 3px white;*/
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			/*box-shadow:0px 0px 0px 2px white inset;*/
+			/*border-width: 8px;
+			border-color: white;
+			border-style: double;*/
+			box-shadow:
+			0 0 0 3px white,
+			0 0 0 8px black;
+		}
+		.nav-link {
+			align-self: center;
+			text-decoration: none;
+			color: white;
+			font-size: 150%;
+		}
+		.nav-link:hover {
+			color: #FC293D;
+			transition: 0.4s;
+		}
+
+
+		.main-wrap {
+			padding-top: 200px;
+			height: 80%;
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.left-panel {
+			width: 10%;
+			height: 70%;
+			align-self: center;
+			display: flex;
+			background-color: rgba(0, 0, 0, 0.85);
+			box-shadow:
+			0 0 0 5px white,
+
+			0 0 0 10px rgba(0, 0, 0, 0.7);		
+		}
+		.right-panel {
+			width: 15%;
+			height: 100%;
+			display: flex;
+			/*background-color: rgba(150, 44, 54, 0.6);*/
+			background-color: rgba(0, 0, 0, 0.85);
+			box-shadow:
+			0 0 0 5px white,
+			0 0 0 10px rgba(0, 0, 0, 0.7);
+		}
+		.main-center {
+			height: 100%;
+			width: 70%;
+			background-color: rgba(0, 0, 0, 0.95);
+			display: flex;
+			flex-direction: column;
+			box-shadow:
+			/*0 0 0 5px #FC293D,*/
+			0 0 0 5px white,
+
+			0 0 0 15px rgba(0, 0, 0, 0.7);
+			align-items: center ;
+			
+		}
+
+
+
+		.footer {
+			/* если подергать высоту и маржин, то футер и основная часть будут сами по себе менять размер без видимой на то причины, я сам хз почему */ 
+			margin-top: 3%; height: 18%; width: 100%; display: flex;
+			background-color: rgba(0, 0, 0, 0.95);
+			box-shadow:
+			0 0 0 5px white,
+			0 0 0 10px rgba(0, 0, 0, 0.7);
+		}
+
+		.regtext {
+			font-size: 200%;
+			color: white;
+			margin-top: 50px;
+		}
+		.label {
+			color: white;
+			font-size: 120%;
+		}
+		.input-wrap {
+			display: flex;
+			flex-direction: row;
+		}
+		
+		#input3 {
+			display: flex;
+			margin: 0 auto;
+		}
+
+		.input.input4{
+			margin-top: 20px;
+		}
+
+
+		.label.text-result {
+			color:white;
+		}
+	</style>
+	<title>Лікарня Shreque</title>
+
+</head>
+
+
+<body>
+
+	<form id="registrationForm">
+<div class="topbar">
+	<div class="logo-box">
+		<img src="mainlogo.png" class="main-logo">
+	</div>
+	<div class="top-nav">
+		<a href="WEB_GP1.html" class=" nav-link nav-link-1">Головна сторінка</a>
+		<a href="WEB_GP2.html" class=" nav-link nav-link-2">Наші послуги</a>
+		<a href="WEB_GP3.html" class=" nav-link nav-link-3">Наша історія</a>
+		<a href="WEB_GP4.html" class=" nav-link nav-link-4">Контакти</a>
+		<a href="WEB_GP5.html" class=" nav-link nav-link-5">Реєстрація</a>
+
+	</div>
+</div>
+
+<div class="big-wrap">
+	<div class="main-wrap">
+		<div class="left-panel">
+			
+		</div>
+		<div class="main-center">
+			<p class="regtext">Реєстрація</p>
+			<div class="input_wrap input_wrap1">
+				<p class="label label1">Введіть ім'я</p>
+				<input type="text" id="input1" name="input1" class="input input1" placeholder="Введіть Ім'я" required>
+			</div>
+			<div class="input_wrap input_wrap2">
+				<p class="label label2">Введіть прізвище</p>
+				<input type="text" id="input2" name="input2" class="input input2" placeholder="Введіть прізвище" required>
+			</div>
+			<div class="input_wrap input_wrap3">
+				<p class="label label3">Введіть номер телефону</p>
+				<input type="text" id="input3" name="input3" class="input input3" placeholder="Введіть номер телефону" required>
+			</div>
+			<div class="input_wrap input_wrap3">
+				<input type="submit" name="input4" class="input input4" value="Зареєструватися">
+			</div>
+			<p class="label text-result" id = "res"></p>
+		</div>
+		
+		<div class="right-panel">
+
+		</div>
+		
+	</div>
+	<div class="footer">
+	</div>
+</div>
+	</form>
+
+	<script src="script.js"></script>
+</body>
+</html>

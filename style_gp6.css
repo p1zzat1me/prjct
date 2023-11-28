@@ -1,0 +1,214 @@
+body {
+			margin: 0px;
+			background-image: url(swamp.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			
+
+		}
+		.big-wrap {
+			height: 1200px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+		}
+
+		.topbar {
+			position: fixed;
+			height: 200px;
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+		}
+		.logo-box {
+			height: 100%;
+			width: 15%;
+			background-color: #2b2b2b;
+		}
+		.main-logo {
+			height: 100%;
+			width: 100%;
+			border: solid 3px white;
+			/*z-index: 3;*/
+		}
+		.top-nav {
+			height: 50%;
+			width: 85%;
+			background-color: #0f0c0d;
+			/*border-left: solid 3px white;*/
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			/*box-shadow:0px 0px 0px 2px white inset;*/
+			/*border-width: 8px;
+			border-color: white;
+			border-style: double;*/
+			box-shadow:
+			0 0 0 3px white,
+			0 0 0 8px black;
+		}
+		.nav-link {
+			align-self: center;
+			text-decoration: none;
+			color: white;
+			font-size: 150%;
+		}
+		.nav-link:hover {
+			color: #FC293D;
+			transition: 0.4s;
+		}
+
+
+		.main-wrap {
+			padding-top: 200px;
+			height: 80%;
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.right-panel {
+			width: 15%;
+			height: 70%;
+			display: flex;
+			/*background-color: rgba(150, 44, 54, 0.6);*/
+			background-color: rgba(0, 0, 0, 0.85);
+			box-shadow:
+			0 0 0 5px #fc293d,
+			0 0 0 10px rgba(0, 0, 0, 0.7);
+			display: flex;
+			flex-direction: column;
+		}
+		.main-center {
+			height: 100%;
+			width: 80%;
+			background-color: rgba(0, 0, 0, 0.95);
+			box-shadow:
+			/*0 0 0 5px #FC293D,*/
+			0 0 0 5px white,
+
+			0 0 0 15px rgba(0, 0, 0, 0.7);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			color: white;
+		}
+
+
+
+		.footer {
+			/* если подергать высоту и маржин, то футер и основная часть будут сами по себе менять размер без видимой на то причины, я сам хз почему */ 
+			margin-top: 3%; height: 15%; width: 100%; display: flex;
+			background-color: rgba(0, 0, 0, 0.95);
+			box-shadow:
+			0 0 0 5px white,
+			0 0 0 10px rgba(0, 0, 0, 0.7);
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+		.foot-text {
+			color: white;
+			text-decoration: none;
+			margin-left: 5%;
+		}
+		.toot-fext:hover {
+			color: #fc293d;
+			transition: .4s;
+		}
+
+		.maintext {
+			font-size: 250%;
+			color: white;
+			margin-top: 40px;
+		}
+		.maintext2 {
+			font-size: 170%;
+			color: white;
+			margin-top: 40px;
+		}
+		.maintext3 {
+			font-size: 200%;
+			color: white;
+			margin-top: 40px;
+		}
+
+		.work-panel {
+			height: 45%;
+			width: 80%;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+		}
+		.chelik {
+			height: 100%;
+			width: 30%;
+			background-color: #bababa;
+			border: solid 3px white;
+			/*box-shadow:
+			0 0 0 5px rgba(0, 0, 0, 1),
+			0 0 0 10px white;*/
+		}
+		.chelik:hover{
+			box-shadow: 10px 5px 5px 5px #FC293D;
+			transition: .5s;
+		}
+		.chpic {
+			height: 63%;
+			width: 100%;
+		}
+		.chelik-img {
+			height: 95%;
+			width: 95%;
+			margin: 2.5%;
+		}
+
+		.chelik-name {
+			margin-left: 10px;
+			font-size: 150%;
+			font-family: Baskerville, serif;
+		}
+		.chelik-desc {
+			margin-left: 20px;
+			font-size: 100%;
+		}
+
+		.right-pic {
+			height: 40%;
+			width: 80%;
+			margin: 10%;
+			box-shadow:
+			0 0 0 6px black,
+			0 0 0 8px white;
+		}
+		.right-img {
+			height: 100%;
+			width: 100%;
+		}
+		.right-text {
+			color: white;
+			font-size: 120%;
+			margin: 20%;
+		}
+		.form1 {
+	        display: flex;
+	        flex-direction: column;
+	        font-size: 200%;
+    	}
+    	.form1 input {
+	        margin: 10px 0;
+	        height: 30px;
+        	font-size: 18px;
+    	}
+    	.submitter {
+    		color: white;
+    		background-color: #FC293D;
+    		height: 5%;
+    		width: 12%;
+    	}
+    	.submitter:hover {
+    		background-color: black;
+    		transition: .5s;
+    	}
